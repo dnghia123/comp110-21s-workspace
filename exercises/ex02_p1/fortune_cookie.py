@@ -13,7 +13,8 @@ def main() -> None:
 
 
 def fortune_cookie() -> str: 
-    x: int = randint(1,100)
+    x: int = randint( 1, 100 )
+    """Function of fortune cookie"""
     if x <= 25:
         return "Your hard work will soon pay off"
     else:
