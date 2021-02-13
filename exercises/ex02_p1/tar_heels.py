@@ -10,7 +10,7 @@ def main() -> None:
 
 
 def tar_heels(x: int) -> str:
-    """Function of Tar Heels"""
+    """Function of Tar Heels."""
     if x % 2 == 0 and x % 7 == 0:
         return "TAR HEELS"
     else:
