@@ -8,12 +8,12 @@ __author__ = "730410603"
 def main() -> None:
     """The entrypoint of the program, when run as a module."""
     print("Your fortune cookie says...")
-    print (fortune_cookie())
+    print(fortune_cookie())
     print("Now, go spread positive vibes!")
 
 
 def fortune_cookie() -> str: 
-    """Function of fortune cookie"""
+    """Function of fortune cookie."""
     x: int = randint(1, 100)
     if x <= 25:
         return "Your hard work will soon pay off"
