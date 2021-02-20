@@ -17,16 +17,13 @@ from datetime import datetime
 from datetime import timedelta
 
 
-Population: int = 330000000
-print("Population: 330000000")
-Doses_administered: int = 32780860
-print("Doses administered: 32780860")
-Doses_per_day: int = 1319981
-print("Doses per day: 1319981")
-print("Target percent vaccinated: 80")
-Target_population_vaccinated: float = (Population * 0.80) 
-Time_until_target_percent: float = ((Target_population_vaccinated - Doses_administered)/Doses_per_day) 
-Days_until_target_percent: timedelta = timedelta( Time_until_target_percent)
-today: datetime = datetime.today() 
-future: datetime = today + Days_until_target_percent
-print("We will reach 80% vaccination in 176 days, which falls on August 03, 2021.")
+Population:int = int(input("Population:"))
+Doses_administered:int = int(input("Doses administered:")) 
+Doses_per_day:int = int(input("Doses per day:"))
+Target_percent_vaccinated: float = int(input("Target percent vaccinated:")) 
+today: datetime = datetime.today()
+Doses_target_goal:float = ((Target_percent_vaccinated/100) * Population) 
+Days_till_target_goal: float = (Doses_target_goal / Doses_per_day)  
+Days_till_goal: timedelta =timedelta(Days_till_target_goal)
+Date_of_goal: datetime = today + Days_till_goal 
+print("We will reach " + str(Target_percent_vaccinated) + "% vaccination in " + str(Days_till_goal) + " which falls on " + str(Date_of_goal.strftime("%B %d, %Y")))    
