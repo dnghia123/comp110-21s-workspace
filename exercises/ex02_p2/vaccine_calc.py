@@ -19,7 +19,7 @@ def main() -> None:
 
 def days_to_target(population: int, doses: int, doses_per_day: int, target: int) -> int:
     """Days until target is reached."""
-    Doses_target_goal:int = int(((target/100) * population) - (doses/2)) 
+    Doses_target_goal: int = int(((target / 100) * population) - (doses / 2)) 
     Days_till_target_goal: int = int((Doses_target_goal * 2) / (doses_per_day)) 
     return Days_till_target_goal 
 
