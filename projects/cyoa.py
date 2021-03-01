@@ -31,6 +31,7 @@ def main() -> None:
 
 def greet() -> None:
     """Game greeting."""
+    global player 
     player = str(input("Name your pet: "))
     print(f"You will be taking care of a virtual pet. Your pet name is: {player}")
     print(f"This is {player}, {NEUTRAL_PET}. The more points you earn, the happier {player} will be")
