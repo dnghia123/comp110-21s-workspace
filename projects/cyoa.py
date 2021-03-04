@@ -13,20 +13,20 @@ LOVING_PET: str = "\U0001F63B"
 
 
 def main() -> None:
-   """Pet game procedure."""
-   greet()
-   print("Choose where to go for the day: \'Beach\', \'Park\', or \'Spa\'. Type \'Exit\' to quit the game.")
-   path: str = str(input("Choose where to go:"))
-   if path == "Beach":
-       Beach(path, player, points)
-   else:
-       if path == "Park":
-           Park(path, player, points)
-       else:
-           if path == "Spa":
-               Spa(path, player, points)
-           else:
-               Exit(path, points) 
+    """Pet game procedure."""
+    greet()
+    print("Choose where to go for the day: \'Beach\', \'Park\', or \'Spa\'. Type \'Exit\' to quit the game.")
+    path: str = str(input("Choose where to go:"))
+    if path == "Beach":
+        Beach(path, player, points)
+    else:
+        if path == "Park":
+            Park(path, player, points)
+        else:
+            if path == "Spa":
+                Spa(path, player, points)
+            else:
+                Exit(path, points) 
 
 
 def greet() -> None:
@@ -84,6 +84,6 @@ def Exit(path: str, points: int) -> None:
             if points > 150:
                 print(LOVING_PET)
             
-
+            
 if __name__ == "__main__":   
     main()
