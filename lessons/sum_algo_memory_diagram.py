@@ -10,6 +10,7 @@ def sum_algo(xs: list[int]) -> int:
 
     return total
 
+
 single: list[int] = [110] 
 many: list [int] = [1, 3, 5]
 print(sum_algo(single))
