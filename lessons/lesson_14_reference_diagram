@@ -1,0 +1,4 @@
+"""Something's up."""
+
+def sum_things_up(xs: list[int] -> int:
+    
